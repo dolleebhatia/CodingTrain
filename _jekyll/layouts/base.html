@@ -2,7 +2,7 @@
 layout: compress
 ---
 
-<html>
+<html lang="en">
   <head>
     {% include 2-base/head.html %}
   </head>
@@ -24,7 +24,7 @@ layout: compress
         {% else %}
 
           {% if page.title %}
-            <h2>{{ page.title }}</h2>
+            <h2>{{ page.title | xml_escape }}</h2>
           {% endif %}
 
           {{ content }}
